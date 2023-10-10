@@ -1,0 +1,84 @@
+.wrapper {
+  padding: 20px;
+}
+.container {
+  width: 90%;
+  max-width: 1280px;
+  display: grid;
+  margin: 30px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5%;
+}
+
+.card {
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 10px 3px rgba(148, 148, 148, 0.25);
+  margin-bottom: 70px;
+}
+
+.card__info {
+  padding: 43px 17px 53px 17px;
+}
+
+.card__img {
+  border-radius: 20px 20px 0px 0px;
+  max-height: 244px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card__img img {
+  height: auto;
+  width: 100%;
+}
+
+.card__info p {
+  color: #bdbdbd;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.card__info p span {
+  color: #333;
+
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.more-btn {
+  font-size: 27px;
+  display: block;
+  margin: 30px auto;
+  min-width: 320px;
+  max-width: 520px;
+  height: 80px;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.34);
+  background: #3d7298;
+  box-shadow: 0px 4px 47px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+}
